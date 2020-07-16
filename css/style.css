@@ -18,9 +18,14 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%; /* make all images responsive */
+}
+
 .container {
   width: 60%;
   margin: 2rem auto;
+  position: relative; /* to contain .details and .search-results modals within */
 }
 
 .gallery {
@@ -225,4 +230,47 @@ footer {
 
 footer a {
   color: white;
+}
+
+/**
+ *  Single person's page
+ */
+
+.details {
+  position: absolute;
+  padding: 1em;
+  width: 100%;
+}
+
+.details .close {
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+  font-size: 2em;
+}
+
+.details .name {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.details .img {
+  height: 33vh;
+  overflow: hidden;
+  position: relative; /* to easily reposition the image within it */
+}
+
+.details .img img {
+  position: absolute;
+}
+
+.details .bio {
+  font-weight: bold;
+}
+
+.details .bio span {
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
