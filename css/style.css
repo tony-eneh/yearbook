@@ -316,7 +316,27 @@ footer a {
   display: block; /* display name and nickname on different lines */
   text-align: left;
 }
-/* FOR TESTING REMOVE LATER */
-.gallery {
+
+/* hide single view and search results views by default */
+.details,
+.search-results {
   display: none;
+}
+
+/* utility classes, utilized by javascript */
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/**
+ *  expand gallery item
+ */
+
+.expanded-item {
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 10;
 }
