@@ -8,13 +8,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  color: #333;
-  font-weight: 300;
+  font-family: "arial", sans-serif;
+  /* color: #333; */
+  /* font-weight: 300; */
   line-height: 1.6;
 }
 
@@ -29,6 +29,8 @@ body {
   grid-template-rows: repeat(8, 5vw);
   grid-auto-rows: 5vw;
   grid-gap: 1.5rem;
+  font-size: small;
+  color: white;
 }
 
 .gallery__img {
@@ -171,4 +173,19 @@ body {
 .gallery__item--18 {
   grid-column: 5 / span 4;
   grid-row: 22 / span 3;
+}
+
+.gallery > * {
+  position: relative;
+}
+
+.gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex; /* keep inner text aligned to base */
+  flex-direction: column;
+  justify-content: flex-end;
 }
