@@ -211,3 +211,18 @@ header .class-set {
 header .yearbook {
   font-family: brushscript;
 }
+
+/**
+ *  Footer section
+ */
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
