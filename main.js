@@ -1,4 +1,5 @@
 const gridItems = document.querySelectorAll(".gallery__item");
+const closeButton = document.querySelector(".close-button");
 
 const showDetail = (e) => {
   // hide every grid item
@@ -6,7 +7,9 @@ const showDetail = (e) => {
   // expand clicked item
   e.currentTarget.classList.add("expanded-item");
   e.currentTarget.classList.remove("hide");
-  // use recorded details to show details view
+
+  //   display close button
+  closeButton.classList.remove("hide");
 };
 
 gridItems.forEach((item) => item.addEventListener("click", showDetail));
